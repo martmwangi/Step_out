@@ -23,7 +23,7 @@
                 style="@style/ImageView.Hamburger"
                 android:src="@drawable/ic_menu_90" />
 
-            <com.yalantis.guillotine.sample.widget.CanaroTextView
+            <com.example.hulk.step_out.widget.CanaroTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
