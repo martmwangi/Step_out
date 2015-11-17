@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Step_out</string>
+    <string name="profile">PROFILE</string>
+    <string name="feed">FEED</string>
+    <string name="activity">ACTIVITY</string>
+    <string name="settings">SETTINGS</string>
+</resources>
