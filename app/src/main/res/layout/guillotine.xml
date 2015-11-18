@@ -16,7 +16,7 @@
     </android.support.v7.widget.Toolbar>
 
     <LinearLayout
-        android:id="@+id/profile_group"
+        android:id="@+id/now_showing"
         style="@style/LinearLayout.GuillotineItem"
         android:layout_marginTop="@dimen/guillotine_medium_margin">
 
@@ -26,11 +26,11 @@
 
         <com.example.hulk.step_out.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
-            android:text="@string/profile" />
+            android:text="Now Showing" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/feed_group"
+        android:id="@+id/coming_soon"
         style="@style/LinearLayout.GuillotineItem">
 
         <ImageView
@@ -39,11 +39,11 @@
 
         <com.example.hulk.step_out.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
-            android:text="@string/feed" />
+            android:text="Coming Soon" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/activity_group"
+        android:id="@+id/offers"
         style="@style/LinearLayout.GuillotineItem">
 
         <ImageView
@@ -52,7 +52,7 @@
 
         <com.example.hulk.step_out.widget.CanaroTextView
             style="@style/TextView.GuillotineItem.Selected"
-            android:text="@string/activity" />
+            android:text="Offers" />
     </LinearLayout>
 
     <View
@@ -60,7 +60,7 @@
         android:layout_height="@dimen/guillotine_divider_height" />
 
     <LinearLayout
-        android:id="@+id/settings_group"
+        android:id="@+id/contact"
         style="@style/LinearLayout.GuillotineItem">
 
         <ImageView
@@ -69,7 +69,19 @@
 
         <com.example.hulk.step_out.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
-            android:text="@string/settings" />
+            android:text="Contact" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/feedback"
+        style="@style/LinearLayout.GuillotineItem">
+
+        <ImageView
+            style="@style/ImageView.GuillotineItem"
+            android:src="@drawable/ic_feed" />
+
+        <com.example.hulk.step_out.widget.CanaroTextView
+            style="@style/TextView.GuillotineItem"
+            android:text="Feedback" />
     </LinearLayout>
 
 </LinearLayout>
