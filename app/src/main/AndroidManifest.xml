@@ -20,6 +20,10 @@
         </activity>
         <activity android:name=".Contact" >
         </activity>
+        <activity android:name=".Comingsoon" >
+        </activity>
+        <activity android:name=".Nowshowing" >
+        </activity>
 
     </application>
 

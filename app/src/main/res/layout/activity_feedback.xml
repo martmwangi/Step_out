@@ -6,6 +6,7 @@
     android:id="@+id/root"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
+
     tools:context="com.example.hulk.step_out.Feedback">
 
     <LinearLayout
@@ -27,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/activity"
+                android:text="Feedback"
                 android:textSize="@dimen/guillotine_item_text_size" />
         </android.support.v7.widget.Toolbar>
     </LinearLayout>

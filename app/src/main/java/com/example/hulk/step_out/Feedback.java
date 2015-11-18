@@ -60,8 +60,8 @@ public class Feedback extends AppCompatActivity {
         click2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),Comingsoon.class);
-                startActivity(i);
+                Intent j = new Intent(getApplicationContext(),Comingsoon.class);
+                startActivity(j);
 
             }
         });
@@ -69,8 +69,8 @@ public class Feedback extends AppCompatActivity {
         click3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),Offers.class);
-                startActivity(i);
+                Intent k = new Intent(getApplicationContext(),Offers.class);
+                startActivity(k);
 
             }
         });
@@ -78,8 +78,8 @@ public class Feedback extends AppCompatActivity {
         click4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),Contact.class);
-                startActivity(i);
+                Intent l = new Intent(getApplicationContext(),Contact.class);
+                startActivity(l);
 
             }
         });
@@ -87,8 +87,8 @@ public class Feedback extends AppCompatActivity {
         click5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),Feedback.class);
-                startActivity(i);
+                Intent m = new Intent(getApplicationContext(),Feedback.class);
+                startActivity(m);
 
             }
         });
