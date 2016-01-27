@@ -29,6 +29,10 @@
             android:text="Now Showing" />
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guillotine_divider_height" />
+
     <LinearLayout
         android:id="@+id/coming_soon"
         style="@style/LinearLayout.GuillotineItem">
@@ -41,6 +45,10 @@
             style="@style/TextView.GuillotineItem"
             android:text="Coming Soon" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guillotine_divider_height" />
 
     <LinearLayout
         android:id="@+id/offers"
@@ -71,6 +79,10 @@
             style="@style/TextView.GuillotineItem"
             android:text="Contact" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guillotine_divider_height" />
     <LinearLayout
         android:id="@+id/feedback"
         style="@style/LinearLayout.GuillotineItem">
