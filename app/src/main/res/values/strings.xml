@@ -4,4 +4,7 @@
     <string name="feed">FEED</string>
     <string name="activity">ACTIVITY</string>
     <string name="settings">SETTINGS</string>
+    <!--Facebook id-->
+    <string name="app_id">728615400528729</string>
+    <string name="title_activity_login">Login</string>
 </resources>
