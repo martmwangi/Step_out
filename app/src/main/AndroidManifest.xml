@@ -12,13 +12,14 @@
         <activity android:name=".Offers"></activity>
         <activity android:name=".Contact"></activity>
         <activity android:name=".Comingsoon"></activity>
-        <activity android:name=".Nowshowing"></activity>
-        <activity android:name=".Intro">
+        <activity android:name=".Nowshowing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Intro">
         </activity>
         <!-- For Facebook activities and permissions -->
         <uses-permission android:name="android.permission.INTERNET" />

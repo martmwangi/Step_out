@@ -17,7 +17,6 @@ import butterknife.InjectView;
 public class Comingsoon extends AppCompatActivity {
     private static final long RIPPLE_DURATION = 250;
 
- S
     @InjectView(R.id.toolbar)
     Toolbar toolbar;
     @InjectView(R.id.root)

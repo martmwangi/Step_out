@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#006064">
 
     <android.support.v7.widget.Toolbar
         style="@style/Toolbar"
@@ -22,11 +23,12 @@
 
         <ImageView
             style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/ic_profile" />
+            android:src="@drawable/showing" />
 
         <com.example.hulk.step_out.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
-            android:text="Now Showing" />
+            android:text="Now Showing"
+            android:fontFamily="serif" />
     </LinearLayout>
 
     <View
@@ -39,11 +41,12 @@
 
         <ImageView
             style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/ic_feed" />
+            android:src="@drawable/sooon" />
 
         <com.example.hulk.step_out.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
-            android:text="Coming Soon" />
+            android:text="Coming Soon"
+            android:fontFamily="serif" />
     </LinearLayout>
 
     <View
@@ -56,11 +59,12 @@
 
         <ImageView
             style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/ic_activity_active" />
+            android:src="@drawable/offers" />
 
         <com.example.hulk.step_out.widget.CanaroTextView
             style="@style/TextView.GuillotineItem.Selected"
-            android:text="Offers" />
+            android:text="Offers"
+            android:fontFamily="serif" />
     </LinearLayout>
 
     <View
@@ -73,11 +77,12 @@
 
         <ImageView
             style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/ic_settings" />
+            android:src="@drawable/envelope" />
 
         <com.example.hulk.step_out.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
-            android:text="Contact" />
+            android:text="Contact"
+            android:fontFamily="serif" />
     </LinearLayout>
 
     <View
@@ -93,7 +98,8 @@
 
         <com.example.hulk.step_out.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
-            android:text="Feedback" />
+            android:text="Feedback"
+            android:fontFamily="serif" />
     </LinearLayout>
 
 </LinearLayout>
