@@ -7,4 +7,5 @@
     <!--Facebook id-->
     <string name="app_id">728615400528729</string>
     <string name="title_activity_login">Login</string>
+    <string name="title_activity_movie1">Movie1</string>
 </resources>

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Step_out.iml" filepath="$PROJECT_DIR$/Step_out.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/youTubeAndroidAPIDemo/youTubeAndroidAPIDemo.iml" filepath="$PROJECT_DIR$/youTubeAndroidAPIDemo/youTubeAndroidAPIDemo.iml" />
     </modules>
   </component>
 </project>
