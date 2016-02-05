@@ -30,4 +30,5 @@ dependencies {
     compile 'com.sromku:simple-fb:4.1.1'
     compile 'com.facebook.android:facebook-android-sdk:4.6.0'
     compile 'com.android.support:design:23.1.1'
+    compile 'com.google.apis:google-api-services-youtube:v3-rev161-1.21.0'
 }

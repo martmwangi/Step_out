@@ -10,6 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.hulk.step_out.Movie1"
-    tools:showIn="@layout/activity_movie1">
+    tools:showIn="@layout/activity_movie1"
+    android:background="#ffffff">
+    <!--Youtube view-->
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="5dp" />
 
 </RelativeLayout>
