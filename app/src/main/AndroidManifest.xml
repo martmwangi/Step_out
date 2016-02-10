@@ -13,11 +13,7 @@
         <activity android:name=".Contact" />
         <activity android:name=".Comingsoon" />
         <activity android:name=".Nowshowing">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Intro"></activity>
         <!-- For Facebook activities and permissions -->
@@ -40,7 +36,13 @@
         <activity
             android:name=".Movie1"
             android:label="@string/title_activity_movie1"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
