@@ -35,13 +35,15 @@
             android:name=".Movie1"
             android:label="@string/title_activity_movie1"
             android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Splash"></activity>
     </application>
 
 </manifest>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
@@ -31,10 +32,12 @@ public class Splash extends AppCompatActivity {
             }
 
         }, SPLASH_TIME_OUT);
-
+//For the name animation
         YoYo.with(Techniques.FadeIn)
                 .duration(700)
                 .playOn(findViewById(R.id.textView2));
     }
-
+    void startAnim(){
+        findViewById(R.id.avloadingIndicatorView).setVisibility(View.VISIBLE);
+    }
 }

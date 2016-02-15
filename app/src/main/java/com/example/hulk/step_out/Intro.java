@@ -14,12 +14,12 @@ public class Intro extends AppIntro {
     @Override
     public void init(Bundle savedInstanceState) {
 
-             addSlide(AppIntroFragment.newInstance("Step Out", "Buy movie Tickets",R.drawable.happ, Color.parseColor("E0F2F1")));
+             addSlide(AppIntroFragment.newInstance("Step Out", "Buy movie Tickets",R.drawable.happ, Color.parseColor("#26A69A")));
              addSlide(AppIntroFragment.newInstance("Don`t Be shy", "Don`t settle for this",R.drawable.tv, Color.parseColor("#4DB6AC")));
-             addSlide(AppIntroFragment.newInstance("Book your seat", "And pay for it here",R.drawable.smartphon, Color.parseColor("#00897B")));
+             addSlide(AppIntroFragment.newInstance("Book your seat", "And pay for it here",R.drawable.Phone, Color.parseColor("#00897B")));
 
-        setBarColor(Color.parseColor("#37474F"));
-        setSeparatorColor(Color.parseColor("#3E2723"));
+        setBarColor(Color.parseColor("#004D40"));
+        setSeparatorColor(Color.parseColor("#004D40"));
 
         showSkipButton(true);
         showDoneButton(true);
