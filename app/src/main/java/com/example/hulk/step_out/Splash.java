@@ -40,7 +40,7 @@ public class Splash extends AppCompatActivity {
         }, SPLASH_TIME_OUT);
 //For the name animation
         YoYo.with(Techniques.FadeIn)
-                .duration(700)
+                .duration(4000)
                 .playOn(findViewById(R.id.textView2));
     }
     void startAnim(){
