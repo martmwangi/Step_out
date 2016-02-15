@@ -12,10 +12,8 @@
         <activity android:name=".Offers" />
         <activity android:name=".Contact" />
         <activity android:name=".Comingsoon" />
-        <activity android:name=".Nowshowing">
-
-        </activity>
-        <activity android:name=".Intro"></activity>
+        <activity android:name=".Nowshowing"></activity>
+        <activity android:name=".Intro" />
         <!-- For Facebook activities and permissions -->
         <uses-permission android:name="android.permission.INTERNET" />
 
@@ -43,6 +41,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Splash"></activity>
     </application>
 
 </manifest>

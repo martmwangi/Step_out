@@ -1,9 +1,9 @@
 package com.example.hulk.step_out;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -15,12 +15,12 @@ import com.google.android.youtube.player.YouTubePlayerView;
 //importing youtube classes
 
 
-public class Movie1 extends YouTubeBaseActivity {
-    public static final String API_KEY = "AIzaSyDIl6QdgO9Bb2ATa_xkznJcn02yRKFFJEg";
+public class Movie1 extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
     public static final String VIDEO_ID = "Zd7Oxg6pm9M";
-    private YouTubePlayer player;
-    Button b;
-    private YouTubePlayer.OnInitializedListener onInitializedListener;
+    private static final int RECOVERY_REQUEST = 1;
+    private YouTubePlayerView youTubeView;
+
+
 
 
     @Override
@@ -30,29 +30,42 @@ public class Movie1 extends YouTubeBaseActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         /** Initializing YouTube player view **/
-        final YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player);
-        onInitializedListener = new YouTubePlayer.OnInitializedListener() {
-            @Override
-            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("VIDEO_ID");
+        youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_player);
+        youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
 
-            }
-
-            @Override
-            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-
-            }
-        };
-        b = (Button) findViewById(R.id.button);
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                youTubePlayerView.initialize("AIzaSyDIl6QdgO9Bb2ATa_xkznJcn02yRKFFJEg",onInitializedListener);
-            }
-        });
 
     }
 
+    @Override
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
+      
+        if (!b) {
+            youTubePlayer.cueVideo(VIDEO_ID); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
+        }
 
+    }
+
+    @Override
+    public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult errorReason) {
+
+
+        if (errorReason.isUserRecoverableError()) {
+            errorReason.getErrorDialog(this, RECOVERY_REQUEST).show();
+        } else {
+            String error = String.format(getString(R.string.player_error), errorReason.toString());
+            Toast.makeText(this, error, Toast.LENGTH_LONG).show();
+        }
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == RECOVERY_REQUEST) {
+            // Retry initialization if user performed a recovery action
+            getYouTubePlayerProvider().initialize(Config.YOUTUBE_API_KEY, this);
+        }
+    }
+
+    protected YouTubePlayerView getYouTubePlayerProvider() {
+        return youTubeView;
+    }
 
 }

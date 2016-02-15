@@ -14,9 +14,9 @@ public class Intro extends AppIntro {
     @Override
     public void init(Bundle savedInstanceState) {
 
-             addSlide(AppIntroFragment.newInstance("Step Out", "Buy movie Tickets",R.drawable.spec, Color.parseColor("#3E2723")));
-             addSlide(AppIntroFragment.newInstance("Don`t Be shy", "check us out",R.drawable.tick, Color.parseColor("#ff070606")));
-             addSlide(AppIntroFragment.newInstance("You coolio", "No outside snacks allowed!!",R.drawable.movietime, Color.parseColor("#C5E1A5")));
+             addSlide(AppIntroFragment.newInstance("Step Out", "Buy movie Tickets",R.drawable.happ, Color.parseColor("E0F2F1")));
+             addSlide(AppIntroFragment.newInstance("Don`t Be shy", "Don`t settle for this",R.drawable.tv, Color.parseColor("#4DB6AC")));
+             addSlide(AppIntroFragment.newInstance("Book your seat", "And pay for it here",R.drawable.smartphon, Color.parseColor("#00897B")));
 
         setBarColor(Color.parseColor("#37474F"));
         setSeparatorColor(Color.parseColor("#3E2723"));
