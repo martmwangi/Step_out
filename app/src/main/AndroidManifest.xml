@@ -16,13 +16,6 @@
         <activity android:name=".Intro" />
         <!-- For Facebook activities and permissions -->
         <uses-permission android:name="android.permission.INTERNET" />
-
-        <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/app_id" />

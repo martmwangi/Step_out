@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#E0F2F1">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -28,6 +29,118 @@
                 android:text="Contact"
                 android:textSize="@dimen/guillotine_item_text_size" />
         </android.support.v7.widget.Toolbar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have something to say"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#865d5d"
+            android:fontFamily="serif"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:materialIcon="account"
+                app:materialIconColor="#6889FF"
+                app:materialIconSize="45dp"
+                android:scaleType="center"
+                android:id="@+id/icon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                app:met_baseColor="#4D69FF"
+                app:met_primaryColor="#0D5302"
+                app:met_errorColor="#ddaa00"
+                android:layout_marginTop="33dp"
+                android:layout_marginLeft="70dp"
+                app:met_floatingLabel="highlight"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-400dp">
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:materialIcon="email"
+                app:materialIconColor="#6889FF"
+                app:materialIconSize="45dp"
+                android:scaleType="center"
+                android:id="@+id/icon2"
+                android:layout_marginLeft="20dp" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                app:met_baseColor="#4D69FF"
+                app:met_primaryColor="#0D5302"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                android:layout_marginLeft="70dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-350dp">
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:materialIcon="phone"
+                app:materialIconColor="#6889FF"
+                app:materialIconSize="45dp"
+                android:scaleType="center"
+                android:id="@+id/icon3"
+                android:layout_marginLeft="20dp" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:hint="Tel"
+                app:met_baseColor="#4D69FF"
+                app:met_primaryColor="#0D5302"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                android:layout_marginLeft="70dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave your details will get back to you shortly"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/icon3"
+                android:layout_centerHorizontal="true"
+                android:textColor="#af6868"
+                android:textSize="17dp"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"
+            android:layout_marginTop="-240dp"
+            android:layout_marginLeft="130dp"
+            />
+
+
+
+
     </LinearLayout>
+
+
 
 </FrameLayout>
